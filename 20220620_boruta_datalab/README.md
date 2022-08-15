@@ -44,7 +44,7 @@ conda deactivate
 
 And finally remove it from the system:
 ```console
-conda env remove --name corrupted_env
+conda env remove --name blog_datalab_boruta
 ```
 
 
