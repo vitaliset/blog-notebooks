@@ -72,10 +72,7 @@ class XSHAPImportanceRandomForestClassifier(RandomForestClassifier):
 
     @property
     def feature_importances_(self):
-
         check_is_fitted(self)
-
         explainer = shap.TreeExplainer(self)
         shap_vals = explainer.shap_values(self.X_shap)
-
         return np.abs(shap_vals[0]).mean(axis=0)
