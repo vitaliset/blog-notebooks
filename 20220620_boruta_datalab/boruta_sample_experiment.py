@@ -30,8 +30,8 @@ def plot_heatmap(dic_sample, matrix):
     hm = sns.heatmap(matrix, cbar=False, cmap=cmap, ax=ax, linewidths=0.1, linecolor='k')
     ax.set_xticks([])
     ax.set_xlabel('Original Columns')
-    ax.set_yticks(np.arange(0.5,len(dic_sample['frac'])-0.4,1), dic_sample['frac'])
-    ax.set_ylabel('frac')
+    ax.set_yticks(np.arange(0.5, len(dic_sample['frac'])-0.4, 1), dic_sample['frac'])
+    ax.set_ylabel('Fraction of the dataframe sampled (frac)')
     cbar = ax.figure.colorbar(ax.collections[0])
     cbar.set_ticks(np.linspace(1,4,9)[1:8][::2],labels=
                 ['Selected useful variable', 'Useful variable not selected',
@@ -39,17 +39,17 @@ def plot_heatmap(dic_sample, matrix):
     plt.show()
 
 def plot_percentage_time(dic_sample, matrix, X_big, y_big):
-    fig, ax = plt.subplots(ncols=2, figsize=(14,5))
+    fig, ax = plt.subplots(ncols=2, figsize=(14, 5))
     ax[0].plot(dic_sample['frac'], (np.array(matrix)==1).sum(axis=1)/50, 'green', label='Green/(Green+Red)')
     ax[0].plot(dic_sample['frac'], (np.array(matrix)==3).sum(axis=1)/50, 'darkorange', label='Orange/(Orange+Blue)')
     ax[0].set_ylim(-0.05, 1.05)
     ax[0].set_ylabel('Percentage of variables')
-    ax[0].set_xlabel('Fraction of the dataframe sampled')
+    ax[0].set_xlabel('Fraction of the dataframe sampled (frac)')
     ax[0].legend()#loc='upper left'
 
     line1 = ax[1].plot(dic_sample['frac'], dic_sample['time'], 'black', label='Time')
     ax[1].set_ylabel('Time (seconds)')
-    ax[1].set_xlabel('Fraction of the dataframe sampled')
+    ax[1].set_xlabel('Fraction of the dataframe sampled (frac)')
     ax2 = ax[1].twinx()
     line2 =ax2.plot(dic_sample['frac'], dic_sample['performance'], 'darkblue', label='Performance')
     ax2.set_ylabel('Performance (ROCAUC)')
@@ -61,7 +61,7 @@ def plot_percentage_time(dic_sample, matrix, X_big, y_big):
         0, 1
     )
     ax2.set_ylim(0.5, 1.05)
-    lns = line1+line2
+    lns = line1 + line2
     labs = [l.get_label() for l in lns]
     ax2.legend(lns, labs, loc=0)
     plt.tight_layout()
@@ -107,5 +107,4 @@ def experiment(fracs, n_samples=5000):
 
     matrix = [[check(col, col_bor, set_usefull_cols) for col in X_big.columns] for col_bor in dic_sample['cols_boruta']]
 
-    plot_heatmap(dic_sample, matrix)
-    plot_percentage_time(dic_sample, matrix, X_big, y_big)
+    return dic_sample, matrix, X_big, y_big

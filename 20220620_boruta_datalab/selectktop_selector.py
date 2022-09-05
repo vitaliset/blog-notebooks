@@ -6,20 +6,9 @@ from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 import numpy as np
 
+# somewhat equivalent to 
+# https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectFromModel.html
 class SelectKTop(SelectorMixin, BaseEstimator):
-    """
-    ...
-
-    random_state : int, RandomState instance or None, default=None
-        Controls 3 sources of randomness:
-        - the bootstrapping of the samples used when building trees
-          (if ``bootstrap=True``)
-        - the sampling of the features to consider when looking for the best
-          split at each node (if ``max_features < n_features``)
-        - the draw of the splits for each of the `max_features`
-        See :term:`Glossary <random_state>` for details.
-    
-    """
 
     def __init__(self, K=5, base_estimator=None, random_state=None):
         self.K = K
