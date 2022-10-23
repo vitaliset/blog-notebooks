@@ -14,7 +14,7 @@ Then, we should enter the enviroment with:
 conda activate blog_datalab_boruta
 ```
 
-Make sure you are inside the `20220620_blog_datalab_boruta` folder and can see the `pyproject.toml` (here you have the list of libraries we'll be using in this enviroment). You can install the libraries I'm using with poetry as follows:
+Make sure you are inside the `DataLab_Blog_Boruta_2022_09_05` folder and can see the `pyproject.toml` (here you have the list of libraries we'll be using in this enviroment). You can install the libraries I'm using with poetry as follows:
 ```console
 poetry install
 ```

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "blog_kmeans_kmeans"
+version = "0.1.0"
+description = ""
+authors = ["vitaliset"]
+
+[tool.poetry.dependencies]
+python = "3.9.6"
+numpy = "1.23.2"
+pandas = "1.4.3"
+matplotlib = "3.5.3"
+scikit-learn = "1.1.2"
+seaborn = "0.11.2"
+tqdm = "^4.64.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
