@@ -47,7 +47,17 @@ And finally remove it from the system:
 conda env remove --name blog_datalab_boruta
 ```
 
+## Poetry update
 
+If you are having troubles with `poetry install`, you may need to create the enviroment again with the update `poetry` version:
+```console
+conda create --name blog_datalab_boruta python=3.9.6 poetry=1.3.1 notebook=6.4.8
+```
+
+If you get an `PackagesNotFoundError` for poetry, you may need to set a new channel for conda to install poetry (namely `conda-forge`) running:
+```console
+conda config --append channels conda-forge
+```
 
 
 
