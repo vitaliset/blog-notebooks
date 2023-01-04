@@ -1,4 +1,4 @@
-# Blog DataLab: MetaKMeans
+# Blog: MetaKMeans
 
 This post discusses how one could implement an ensemble of K-Means aggregating K-Means with a meta cluster. We also discuss aspects of clustering as a whole briefly.
 
