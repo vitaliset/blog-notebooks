@@ -6,7 +6,12 @@ This post discusses how dangerous it can be to do hyperparameter tunning with th
 
 Once you are inside this folder, you should create a virtual environment and install the same libraries used at this notebook. We can create de virtual enviroment using:
 ```console
-conda create --name blog_threshold_dependent_opt python=3.9.6 poetry=1.1.7 notebook=6.4.8
+conda create --name blog_threshold_dependent_opt python=3.9.6 poetry=1.3.1 notebook=6.4.8
+```
+
+If you get an `PackagesNotFoundError` for poetry, you may need to set a new channel for conda to install poetry (namely `conda-forge`) running:
+```console
+conda config --append channels conda-forge
 ```
 
 Then, we should enter the enviroment with:
