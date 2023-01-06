@@ -10,11 +10,11 @@ It can be dangerous to do hyperparameter tunning with threshold-dependent metric
 
 A possible way to aggregate results from different K-Means to build an ensemble.
 
-![https://vitaliset.github.io//assets/img/posts/metakmeans_thumb.jpg]
+![metakemans](https://vitaliset.github.io//assets/img/posts/metakmeans_thumb.jpg)
 
 ## [Boruta](https://vitaliset.github.io/boruta/) 🇧🇷 (2022/09/05)
 
 The need for variable selection, the intuition behind Boruta algorithm, and practical usage tips.
 
-![https://vitaliset.github.io//assets/img/posts/boruta_thumb.jpg]
+![boruta](https://vitaliset.github.io//assets/img/posts/boruta_thumb.jpg)
 
