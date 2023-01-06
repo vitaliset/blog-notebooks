@@ -2,7 +2,7 @@
 
 Repository with the notebooks and codes used to generate the images and discussions of the blog posts.
 
-## [Hyperparameter search with threshold-dependent metrics](https://vitaliset.github.io/threshold-dependent-opt/) 🇧🇷 (2023/01/06)
+## [Hyperparameter search with threshold-dependent metrics](https://vitaliset.github.io/threshold-dependent-opt/) 🇺🇸 (2023/01/06)
 
 It can be dangerous to do hyperparameter tunning with threshold-dependent metrics directly. Here we discuss why and how to work around it.
 
