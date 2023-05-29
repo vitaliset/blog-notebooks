@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "blog_cde_with_flexcode"
+version = "0.1.0"
+description = ""
+authors = ["vitaliset"]
+
+[tool.poetry.dependencies]
+python = "3.10.9"
+numpy = "1.24.1"
+pandas = "1.5.2"
+matplotlib = "3.6.2"
+scikit-learn = "1.2.0"
+tqdm = "4.64.1"
+jupyter = "^1.0.0"
+flexcode = {extras = ["all"], version = "^0.2.1"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
