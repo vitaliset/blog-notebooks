@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "blog_multiclass_threshold_tunning"
+name = "blog_threshold_dependent_opt"
 version = "0.1.0"
 description = ""
 authors = ["vitaliset"]
@@ -10,6 +10,7 @@ numpy = "1.24.1"
 pandas = "1.5.2"
 matplotlib = "3.6.2"
 scikit-learn = "1.2.0"
+imbalanced-learn = "0.10.1"
 tqdm = "4.64.1"
 
 [tool.poetry.dev-dependencies]
