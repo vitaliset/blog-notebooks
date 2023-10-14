@@ -1,4 +1,4 @@
-# Blog: Demystifying the R2 score
+# Blog: The R2 score does not range between 0 and 1
 
 Exploring the nuances and interpretations of the R2 score in regression analysis, emphasizing its comparison with simple baseline model (the mean) and its potential generalization to other metrics
 
