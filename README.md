@@ -1,20 +1,11 @@
-# Blog notebooks
+# Blog notebooks — moved 📦
 
-Repository with the notebooks and codes used to generate the images and discussions of the blog posts.
+**This repository is archived.** The notebooks and code that generate the blog
+posts now live alongside the site, in the
+[`vitaliset.github.io`](https://github.com/vitaliset/vitaliset.github.io)
+repository under [`code/`](https://github.com/vitaliset/vitaliset.github.io/tree/master/code).
 
-## [Hyperparameter search with threshold-dependent metrics](https://vitaliset.github.io/threshold-dependent-opt/) 🇺🇸 (2023/01/06)
+Each post's experiments are in `code/<slug>/` there (for example,
+[`code/boruta/`](https://github.com/vitaliset/vitaliset.github.io/tree/master/code/boruta)).
 
-It can be dangerous to do hyperparameter tunning with threshold-dependent metrics directly. Here we discuss why and how to work around it.
-
-## [MetaKMeans](https://vitaliset.github.io/metakmeans/) 🇧🇷 (2022/10/23)
-
-A possible way to aggregate results from different K-Means to build an ensemble.
-
-![metakemans](https://vitaliset.github.io//assets/img/posts/metakmeans_thumb.jpg)
-
-## [Boruta](https://vitaliset.github.io/boruta/) 🇧🇷 (2022/09/05)
-
-The need for variable selection, the intuition behind Boruta algorithm, and practical usage tips.
-
-![boruta](https://vitaliset.github.io//assets/img/posts/boruta_thumb.jpg)
-
+The blog itself is at <https://vitaliset.github.io/>.
